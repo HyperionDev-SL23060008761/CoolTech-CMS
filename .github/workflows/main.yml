@@ -1,0 +1,39 @@
+name: CoolTech CMS
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: [portfolio-cooltech-cms]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+
+      - name: Setup the Environment File
+        run: |
+          cp /home/portfolio/projects/cooltech-cms/main.env /home/portfolio/projects/cooltech-cms/server-files/.env
+
+      - name: Install Required Modules
+        run: |
+          bun install
+
+      - name: Build the Project
+        run: |
+          bun run build
+
+      - name: Restart App
+        run: |
+          pm2 stop "CoolTech CMS
+          pm2 reset "CoolTech CMS"
+          pm2 start "CoolTech CMS"
+
+    #PM2 START COMMAND: pm2 start bun --name "CoolTech CMS" -- run start
