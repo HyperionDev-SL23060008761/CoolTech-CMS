@@ -32,7 +32,7 @@ jobs:
 
       - name: Restart App
         run: |
-          pm2 stop "CoolTech CMS
+          pm2 stop "CoolTech CMS"
           pm2 reset "CoolTech CMS"
           pm2 start "CoolTech CMS"
 
