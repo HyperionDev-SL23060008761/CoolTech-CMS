@@ -1,6 +1,6 @@
-# Git Compass
+# CoolTech Credentials Management System
 
-#### Git Compass is a Website made to search for and view Publicly Available Details about a github user
+#### The CoolTech Credentials Management System is a Web Interface for Employees of CoolTech to help keep track of Credentials for different Organizations, Divisions and Services
 
 ## Requirements
 
@@ -49,7 +49,7 @@ Start the Project
 
 ### Viewing the site:
 
-Visit http://localhost:4005/ in your browser
+Visit http://localhost:4007/ in your browser
 
 ## Support
 
