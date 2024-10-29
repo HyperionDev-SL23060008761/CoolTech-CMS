@@ -54,7 +54,7 @@ export default function DivisionPage({ user }: { user: User | null }) {
 		setCredentials(credentials);
 	}
 
-	//Handle Create Credentials Events
+	//Handles the Create Credentials Events
 	async function handleCreateCredentials() {
 		//Check if the Division is Invalid
 		if (!division) return toast.error("Division Not Found");
