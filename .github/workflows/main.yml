@@ -20,7 +20,7 @@ jobs:
 
       - name: Setup the Environment File
         run: |
-          cp /home/portfolio/projects/cooltech-cms/website/main.env /home/portfolio/projects/cooltech-cms/website/server-files/.env
+          cp /home/jacknytely/github-projects/cooltech-cms/website/main.env /home/jacknytely/github-projects/cooltech-cms/website/server-files/.env
 
       - name: Install Required Modules
         run: |
