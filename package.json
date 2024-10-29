@@ -1,5 +1,5 @@
 {
-	"name": "cooltech-cms",
+  "name": "cooltech-cms",
 	"author": "JackNytely",
 	"private": true,
 	"version": "0.0.0",
@@ -11,7 +11,7 @@
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview"
 	},
-	"dependencies": {
+  "dependencies": {
 		"js-cookie": "^3.0.5",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
